@@ -4,6 +4,7 @@ import { useEffect, useRef, useState, type ReactNode } from "react";
 import { ArrowUp, Check, Copy, Download, Linkedin, Mail, MapPin, Moon, Sun, X, Award } from "lucide-react";
 
 import profileImg from "../assets/profile.jpg";
+import profile2Img from "../assets/profile-2.jpg";
 
 const TITLE = "Karanveer Singh — MBA Student | Human Resources & Operations Management";
 const DESC =
@@ -187,10 +188,7 @@ function Index() {
             <Reveal>
               <Eyebrow light>MBA Student • Human Resources &amp; Operations Management</Eyebrow>
               <h1 className="mt-4 text-5xl font-semibold leading-[1.05] md:text-7xl">Karanveer Singh</h1>
-              <p className="mt-4 text-xl font-medium text-coral md:text-2xl">MBA Student | HR Operations &amp; People Analytics</p>
-              <p className="mt-5 max-w-xl text-lg text-band-foreground/90">
-                Civil engineer turned HR professional, turning people data into fair, effective workplaces.
-              </p>
+              <p className="mt-4 text-xl font-medium text-coral md:text-2xl">MBA STUDENT • HUMAN RESOURCES &amp; OPERATIONS MANAGEMENT</p>
               <p className="mt-4 max-w-xl border-l-2 border-coral pl-4 text-sm text-band-foreground/75">
                 <span className="font-semibold text-band-foreground">Career focus:</span> To grow into an HR professional who
                 blends hands-on people operations with data-driven, fair and compliant workplace practices.
@@ -261,7 +259,7 @@ function Index() {
             <div className="grid gap-10 md:grid-cols-[1fr_1.4fr]">
               <Reveal>
                 <div className={`${card} p-3`}>
-                  <img src={profileImg} alt="Karanveer Singh" loading="lazy" className="aspect-[4/5] w-full rounded-xl object-cover object-top" />
+                  <img src={profile2Img} alt="Karanveer Singh" loading="lazy" className="aspect-[4/5] w-full rounded-xl object-cover object-top" />
                 </div>
               </Reveal>
               <Reveal delay={0.1}>
