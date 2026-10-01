@@ -3,9 +3,11 @@ import { motion, useScroll, useSpring, useInView, animate } from "framer-motion"
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { ArrowUp, Check, Copy, Download, Linkedin, Mail, MapPin, Moon, Sun, X, Award } from "lucide-react";
 
-const TITLE = "Karanveer Singh — MBA (HR) | HR Operations & People Analytics";
+import profileImg from "../assets/profile.jpg";
+
+const TITLE = "Karanveer Singh — MBA Student | Human Resources & Operations Management";
 const DESC =
-  "Portfolio of Karanveer Singh, MBA student at Lovely Professional University focused on HR operations, payroll, onboarding and people analytics.";
+  "Karanveer Singh, MBA Student | Human Resources & Operations Management at Lovely Professional University — HR operations, payroll, onboarding and people analytics.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -183,7 +185,7 @@ function Index() {
         <section className="bg-band text-band-foreground">
           <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 py-16 md:grid-cols-[1.3fr_1fr] md:py-24">
             <Reveal>
-              <Eyebrow light>MBA • Human Resources • LPU</Eyebrow>
+              <Eyebrow light>MBA Student • Human Resources &amp; Operations Management</Eyebrow>
               <h1 className="mt-4 text-5xl font-semibold leading-[1.05] md:text-7xl">Karanveer Singh</h1>
               <p className="mt-4 text-xl font-medium text-coral md:text-2xl">MBA Student | HR Operations &amp; People Analytics</p>
               <p className="mt-5 max-w-xl text-lg text-band-foreground/90">
@@ -210,8 +212,8 @@ function Index() {
               <div className="relative">
                 <div className="absolute inset-0 translate-x-4 translate-y-4 rounded-[2rem] border-2 border-coral" />
                 <img
-                  src="./profile.webp"
-                  alt="Karanveer Singh in a navy blazer"
+                  src={profileImg}
+                  alt="Karanveer Singh"
                   width={500}
                   height={500}
                   className="relative aspect-square w-full rounded-[2rem] object-cover shadow-2xl"
@@ -259,7 +261,7 @@ function Index() {
             <div className="grid gap-10 md:grid-cols-[1fr_1.4fr]">
               <Reveal>
                 <div className={`${card} p-3`}>
-                  <img src="./profile-2.webp" alt="Karanveer Singh, informal portrait" loading="lazy" className="aspect-[4/5] w-full rounded-xl object-cover" />
+                  <img src={profileImg} alt="Karanveer Singh" loading="lazy" className="aspect-[4/5] w-full rounded-xl object-cover object-top" />
                 </div>
               </Reveal>
               <Reveal delay={0.1}>
