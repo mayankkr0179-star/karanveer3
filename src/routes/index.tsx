@@ -186,7 +186,6 @@ function Index() {
         <section className="bg-band text-band-foreground">
           <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 py-16 md:grid-cols-[1.3fr_1fr] md:py-24">
             <Reveal>
-              <Eyebrow light>MBA Student • Human Resources &amp; Operations Management</Eyebrow>
               <h1 className="mt-4 text-5xl font-semibold leading-[1.05] md:text-7xl">Karanveer Singh</h1>
               <p className="mt-4 text-xl font-medium text-coral md:text-2xl">MBA STUDENT • HUMAN RESOURCES &amp; OPERATIONS MANAGEMENT</p>
               <p className="mt-4 max-w-xl border-l-2 border-coral pl-4 text-sm text-band-foreground/75">
