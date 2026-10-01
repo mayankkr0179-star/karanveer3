@@ -1,29 +1,23 @@
-# Welcome to your Lovable project
+# Karanveer Singh — HR Portfolio
 
-This project was built with [Lovable](https://lovable.dev).
+A single-page, fully static portfolio for Karanveer Singh, MBA (HR) at Lovely Professional University. Sections: hero, about, academics, experience, projects, certifications, skills, networking and contact.
 
-## Build with Lovable
-
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+## Run locally
+```bash
+npm install
 npm run dev
 ```
+Open http://localhost:8080.
 
-## Built with
+## Deploy to GitHub Pages (free)
+1. Push this project to a GitHub repository (branch `main`).
+2. In the repo go to **Settings → Pages → Source: GitHub Actions**.
+3. Every push to `main` runs `.github/workflows/deploy.yml`, which builds the site and publishes the static files.
 
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
+All images and documents live in `public/` and are linked with relative paths, so the site works on `username.github.io` and `username.github.io/repo-name`.
+
+## Updating content
+- Photos: `public/profile.webp`, `public/profile-2.webp`
+- Resume: `public/resume.pdf`
+- Certificates: `public/certs/`
+- Text: `src/routes/index.tsx`
