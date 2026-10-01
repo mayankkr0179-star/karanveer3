@@ -67,7 +67,7 @@ function SectionHead({ n, eyebrow, title, intro }: { n: string; eyebrow: string;
   );
 }
 
-function Counter({ to, suffix = "", decimals = 0 }: { to: number; suffix?: string; decimals?: number }) {
+function Counter({ to, suffix = "", decimals = 0 }: { to: number; suffix?: string | undefined; decimals?: number | undefined }) {
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true });
   const [v, setV] = useState(to);
